@@ -1,4 +1,4 @@
-let renderer {
+let renderer = {
     clearPage: function () {
         let childNodes = div1.childNodes;
         for (let i = childNodes.length - 1; i >= 0; i--) {
@@ -25,5 +25,10 @@ let renderer {
         element.addEventListener(event, function () {
             eval(funct + param); 
         });
+    },
+    makeContainer: function (id, where, containerClass = "container", rowClass = "row", colClass = "col") {
+        this.makeTag("div", id, where, containerClass)
+        this.makeTag("div", id + "Row", id, rowClass)
+        this.makeTag("div", id + "Col", id + "Row", colClass)
     }
 };
