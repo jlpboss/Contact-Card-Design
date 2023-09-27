@@ -1,0 +1,26 @@
+.circ{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.poke{
+    height: 20%;
+    width: 40%;
+}
+.cardStuff{
+    background-image: url("img/istockphoto-1423098321-612x612-transformed.jpeg");
+}
+.textStyle {
+    color: ivory;
+}
+.icon {
+    border-radius: 55%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(154, 154, 154);
+}
+.icon:hover {
+    background-color: white;
+}
